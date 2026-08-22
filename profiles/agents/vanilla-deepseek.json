@@ -1,0 +1,9 @@
+{
+  "name": "DeepSeek",
+  "harness": "deepseek-harness",
+  "provider": "native",
+  "native": true,
+  "model": "",
+  "tool_profile": "full",
+  "fusion": null
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DSH Open Solar",
+  "harness": "deepseek-harness",
+  "provider": "openrouter",
+  "model": "upstage/solar-pro4",
+  "tool_profile": "coding",
+  "max_tokens": 16000,
+  "fusion": null
+}

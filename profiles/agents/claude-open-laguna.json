@@ -1,0 +1,8 @@
+{
+  "name": "Claude Open Laguna (Free)",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "poolside/laguna-s-2.1:free",
+  "tool_profile": "coding",
+  "fusion": null
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Claude Open GLM (Free)",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "z-ai/glm-5.2:free",
+  "tool_profile": "coding",
+  "fusion": null
+}

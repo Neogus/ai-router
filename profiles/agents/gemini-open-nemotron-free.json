@@ -1,0 +1,8 @@
+{
+  "name": "Gemini (Nemotron Free)",
+  "harness": "gemini",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "tool_profile": "full",
+  "fusion": null
+}

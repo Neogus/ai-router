@@ -1,0 +1,8 @@
+{
+  "name": "Claude Open North Code (Free)",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "cohere/north-mini-code:free",
+  "tool_profile": "coding",
+  "fusion": null
+}

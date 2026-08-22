@@ -1,0 +1,9 @@
+{
+  "name": "Gemini",
+  "harness": "gemini",
+  "provider": "native",
+  "native": true,
+  "model": "",
+  "tool_profile": "full",
+  "fusion": null
+}

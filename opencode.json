@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:3459/v1",
+        "apiKey": "oc-open-gemma-free"
+      },
+      "models": {
+        "nvidia/nemotron-3-ultra-550b-a55b:free": {}
+      }
+    }
+  },
+  "model": "router/nvidia/nemotron-3-ultra-550b-a55b:free"
+}

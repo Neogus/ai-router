@@ -1,0 +1,9 @@
+{
+  "name": "Claude Open GPT Nano",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "openai/gpt-5-nano",
+  "max_tokens": 16000,
+  "tool_profile": "coding",
+  "fusion": null
+}

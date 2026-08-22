@@ -1,0 +1,8 @@
+{
+  "name": "Codex Open Nemotron Free",
+  "harness": "codex",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "tool_profile": "none",
+  "fusion": null
+}

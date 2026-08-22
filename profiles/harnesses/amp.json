@@ -1,0 +1,40 @@
+{
+  "name": "Amp (Sourcegraph)",
+  "binary": "amp",
+  "binary_path": "",
+  "launch_mode": "env",
+  "speaks_protocol": "anthropic",
+  "native_only": true,
+  "env_map": {},
+  "extra_args": [],
+  "path_additions": [
+    "C:\\Program Files\\nodejs"
+  ],
+  "uses_tools": false,
+  "available_tools": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "LS",
+    "MultiEdit",
+    "NotebookEdit",
+    "NotebookRead",
+    "Read",
+    "TodoRead",
+    "TodoWrite",
+    "WebFetch",
+    "WebSearch",
+    "Write"
+  ],
+  "tool_profiles": {
+    "full": {
+      "description": "All tools (native mode)",
+      "mode": "keep_all"
+    },
+    "none": {
+      "description": "Strip all tools",
+      "mode": "strip_all"
+    }
+  }
+}

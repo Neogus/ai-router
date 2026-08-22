@@ -1,0 +1,65 @@
+{
+  "name": "Aider",
+  "binary": "aider",
+  "binary_path": "",
+  "launch_mode": "env",
+  "speaks_protocol": "openai",
+  "env_map": {
+    "base_url": "OPENAI_API_BASE",
+    "auth_token": "OPENAI_API_KEY"
+  },
+  "extra_args": [
+    "--model",
+    "openai/{{model}}"
+  ],
+  "probe_args": [
+    "--yes",
+    "--no-git",
+    "--no-auto-commits",
+    "--message",
+    "hi"
+  ],
+  "uses_tools": false,
+  "available_tools": [],
+  "tool_profiles": {
+    "full": {
+      "description": "All tools (pass-through)",
+      "mode": "keep_all"
+    },
+    "coding": {
+      "description": "Essential coding tools",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob",
+        "Agent",
+        "WebSearch",
+        "WebFetch",
+        "AskUserQuestion",
+        "TaskOutput",
+        "TaskStop",
+        "SendMessage"
+      ]
+    },
+    "minimal": {
+      "description": "File ops + shell only",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob"
+      ]
+    },
+    "none": {
+      "description": "Strip all tools",
+      "mode": "strip_all"
+    }
+  }
+}

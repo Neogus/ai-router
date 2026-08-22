@@ -1,0 +1,9 @@
+{
+  "name": "Claude Open Solar",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "upstage/solar-pro4",
+  "max_tokens": 16000,
+  "tool_profile": "coding",
+  "fusion": null
+}

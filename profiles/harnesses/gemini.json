@@ -1,0 +1,84 @@
+{
+  "name": "Gemini CLI (Google)",
+  "binary": "gemini",
+  "binary_path": "",
+  "launch_mode": "env",
+  "speaks_protocol": "gemini",
+  "base_url_no_v1": true,
+  "discover_timeout": 30,
+  "env_map": {
+    "base_url": "GOOGLE_GEMINI_BASE_URL",
+    "auth_token": "GEMINI_API_KEY"
+  },
+  "extra_args": [],
+  "probe_override_args": [
+    "-p",
+    "hi",
+    "-y",
+    "--skip-trust"
+  ],
+  "probe_env": {
+    "GEMINI_CLI_TRUST_WORKSPACE": "true"
+  },
+  "path_additions": [
+    "C:\\Program Files\\nodejs"
+  ],
+  "available_tools": [
+    "activate_skill",
+    "enter_plan_mode",
+    "glob",
+    "google_web_search",
+    "grep_search",
+    "invoke_agent",
+    "list_background_processes",
+    "list_directory",
+    "read_background_output",
+    "read_file",
+    "replace",
+    "run_shell_command",
+    "update_topic",
+    "web_fetch",
+    "write_file"
+  ],
+  "tool_profiles": {
+    "full": {
+      "description": "All tools (pass-through)",
+      "mode": "keep_all"
+    },
+    "coding": {
+      "description": "Essential coding tools",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob",
+        "Agent",
+        "WebSearch",
+        "WebFetch",
+        "AskUserQuestion",
+        "TaskOutput",
+        "TaskStop",
+        "SendMessage"
+      ]
+    },
+    "minimal": {
+      "description": "File ops + shell only",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob"
+      ]
+    },
+    "none": {
+      "description": "Strip all tools",
+      "mode": "strip_all"
+    }
+  }
+}

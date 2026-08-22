@@ -1,0 +1,8 @@
+{
+  "name": "Goose (Nemotron Free)",
+  "harness": "goose",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "tool_profile": "full",
+  "fusion": null
+}

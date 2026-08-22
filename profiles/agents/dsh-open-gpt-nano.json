@@ -1,0 +1,9 @@
+{
+  "name": "DSH Open GPT Nano",
+  "harness": "deepseek-harness",
+  "provider": "openrouter",
+  "model": "openai/gpt-5-nano",
+  "tool_profile": "coding",
+  "max_tokens": 16000,
+  "fusion": null
+}

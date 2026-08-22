@@ -1,0 +1,8 @@
+{
+  "name": "Claude Open Nemotron Super (Free)",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "tool_profile": "coding",
+  "fusion": null
+}

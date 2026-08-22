@@ -1,0 +1,61 @@
+{
+  "full": {
+    "description": "All tools - for Claude models that support full tool use",
+    "mode": "keep_all"
+  },
+  "coding": {
+    "description": "Essential coding tools only - file ops, shell, search",
+    "mode": "whitelist",
+    "tools": [
+      "PowerShell",
+      "Read",
+      "Write",
+      "Edit",
+      "Grep",
+      "Glob",
+      "Agent",
+      "WebSearch",
+      "WebFetch",
+      "AskUserQuestion",
+      "TaskOutput",
+      "TaskStop",
+      "SendMessage"
+    ]
+  },
+  "design": {
+    "description": "Design-focused - coding tools plus DesignSync",
+    "mode": "whitelist",
+    "tools": [
+      "PowerShell",
+      "Read",
+      "Write",
+      "Edit",
+      "Grep",
+      "Glob",
+      "Agent",
+      "DesignSync",
+      "WebSearch",
+      "WebFetch",
+      "AskUserQuestion",
+      "TaskOutput",
+      "TaskStop",
+      "SendMessage"
+    ]
+  },
+  "minimal": {
+    "description": "Bare minimum - just file read/write and shell",
+    "mode": "whitelist",
+    "tools": [
+      "PowerShell",
+      "Read",
+      "Write",
+      "Edit",
+      "Grep",
+      "Glob"
+    ]
+  },
+  "none": {
+    "description": "Strip all tools - for non-Claude models or pure chat",
+    "mode": "strip_all"
+  }
+}

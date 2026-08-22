@@ -1,0 +1,8 @@
+{
+  "name": "kimi-code",
+  "base_url": "https://api.kimi.com/coding",
+  "api_key_env": "KIMI_CODE_API_KEY",
+  "endpoints": {
+    "openai": "/v1/chat/completions"
+  }
+}

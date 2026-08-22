@@ -1,0 +1,9 @@
+{
+  "name": "Claude Open Mistral Nemo",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "mistralai/mistral-nemo",
+  "max_tokens": 16000,
+  "tool_profile": "coding",
+  "fusion": null
+}

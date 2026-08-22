@@ -1,0 +1,54 @@
+===================================================
+AI Router - Harness Installation Instructions
+===================================================
+
+Prerequisites:
+- Node.js LTS installed (https://nodejs.org/ or: winget install OpenJS.NodeJS.LTS)
+- PowerShell (run as Administrator for global installs)
+
+===================================================
+1. CLAUDE CODE
+===================================================
+
+npm install -g @anthropic-ai/claude-code --allow-scripts=@anthropic-ai/claude-code
+
+Verify:
+claude --version
+
+===================================================
+2. OPENCODE
+===================================================
+
+Step 1 - Download:
+Invoke-WebRequest -Uri "https://github.com/anomalyco/opencode/releases/download/v1.18.21/opencode-windows-x64.zip" -OutFile "$env:TEMP\opencode.zip"
+
+Step 2 - Extract:
+Expand-Archive "$env:TEMP\opencode.zip" -DestinationPath "$env:LOCALAPPDATA\Programs\opencode" -Force
+
+Step 3 - Add to PATH (permanent):
+[Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";$env:LOCALAPPDATA\Programs\opencode", "User")
+
+Step 4 - Add to current session:
+$env:PATH += ";$env:LOCALAPPDATA\Programs\opencode"
+
+Verify:
+opencode --version
+
+===================================================
+3. DEEPSEEK HARNESS (dsh)
+===================================================
+
+npm install -g @deepseek-ai/dsh
+
+Verify:
+dsh --version
+
+===================================================
+NOTES
+===================================================
+
+- After installing, restart your terminal for PATH changes to take effect.
+- You do NOT need API keys for the harnesses themselves since the AI Router
+  handles all API authentication. The harnesses just point at the router.
+- Launch harnesses through the router using:
+  .\router-launch.ps1 "Profile Name"

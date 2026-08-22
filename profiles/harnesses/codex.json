@@ -1,0 +1,21 @@
+{
+  "name": "Codex (OpenAI CLI)",
+  "binary": "codex",
+  "binary_path": "",
+  "launch_mode": "env",
+  "speaks_protocol": "openai-responses",
+  "native_only": true,
+  "env_map": {},
+  "extra_args": [],
+  "available_tools": [],
+  "tool_profiles": {
+    "full": {
+      "description": "All tools (native mode)",
+      "mode": "keep_all"
+    },
+    "none": {
+      "description": "Strip all tools",
+      "mode": "strip_all"
+    }
+  }
+}

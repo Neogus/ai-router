@@ -1,0 +1,9 @@
+{
+  "name": "Claude Open Qwen Flash",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "qwen/qwen3.7-flash",
+  "max_tokens": 16000,
+  "tool_profile": "coding",
+  "fusion": null
+}

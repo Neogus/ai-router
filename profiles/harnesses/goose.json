@@ -1,0 +1,86 @@
+{
+  "name": "Goose (Block)",
+  "binary": "goose",
+  "binary_path": "",
+  "launch_mode": "env",
+  "speaks_protocol": "openai",
+  "base_url_no_v1": true,
+  "env_map": {
+    "base_url": "OPENAI_HOST",
+    "auth_token": "OPENAI_API_KEY"
+  },
+  "extra_args": [
+    "session",
+    "--provider",
+    "openai"
+  ],
+  "probe_override_args": [
+    "run",
+    "--text",
+    "hi",
+    "--provider",
+    "openai",
+    "--no-session"
+  ],
+  "available_tools": [
+    "analyze",
+    "apps__create_app",
+    "apps__delete_app",
+    "apps__iterate_app",
+    "apps__list_apps",
+    "delegate",
+    "edit",
+    "extensionmanager__list_resources",
+    "extensionmanager__manage_extensions",
+    "extensionmanager__read_resource",
+    "extensionmanager__search_available_extensions",
+    "load",
+    "load_skill",
+    "read_image",
+    "shell",
+    "todo__todo_write",
+    "tree",
+    "write"
+  ],
+  "tool_profiles": {
+    "full": {
+      "description": "All tools (pass-through)",
+      "mode": "keep_all"
+    },
+    "coding": {
+      "description": "Essential coding tools",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob",
+        "Agent",
+        "WebSearch",
+        "WebFetch",
+        "AskUserQuestion",
+        "TaskOutput",
+        "TaskStop",
+        "SendMessage"
+      ]
+    },
+    "minimal": {
+      "description": "File ops + shell only",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob"
+      ]
+    },
+    "none": {
+      "description": "Strip all tools",
+      "mode": "strip_all"
+    }
+  }
+}

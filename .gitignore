@@ -1,0 +1,22 @@
+# API keys (user-specific)
+.env
+
+# NSSM (downloaded during install)
+tools/
+
+# Logs
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Debug files (runtime-generated)
+debug/
+
+# Probe agent files
+profiles/agents/_probe-*.json
+
+# Large binaries
+*.tar.bz2
+*.zip

@@ -1,0 +1,9 @@
+{
+  "name": "Claude Code",
+  "harness": "claude-code",
+  "provider": "native",
+  "native": true,
+  "model": "",
+  "tool_profile": "full",
+  "fusion": null
+}

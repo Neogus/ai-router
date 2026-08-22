@@ -1,0 +1,9 @@
+{
+  "name": "Goose",
+  "harness": "goose",
+  "provider": "native",
+  "native": true,
+  "model": "",
+  "tool_profile": "full",
+  "fusion": null
+}

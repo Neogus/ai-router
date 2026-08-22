@@ -1,0 +1,9 @@
+{
+  "name": "Codex",
+  "harness": "codex",
+  "provider": "native",
+  "native": true,
+  "model": "",
+  "tool_profile": "full",
+  "fusion": null
+}

@@ -1,0 +1,80 @@
+{
+  "name": "OpenCode",
+  "binary": "opencode",
+  "binary_path": "",
+  "launch_mode": "config_file",
+  "speaks_protocol": "openai",
+  "env_map": {},
+  "extra_args": [],
+  "available_tools": [
+    "bash",
+    "edit",
+    "glob",
+    "grep",
+    "question",
+    "read",
+    "skill",
+    "task",
+    "todowrite",
+    "webfetch",
+    "write"
+  ],
+  "tool_profiles": {
+    "full": {
+      "description": "All tools (pass-through)",
+      "mode": "keep_all"
+    },
+    "coding": {
+      "description": "Essential coding tools",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob",
+        "Agent",
+        "WebSearch",
+        "WebFetch",
+        "AskUserQuestion",
+        "TaskOutput",
+        "TaskStop",
+        "SendMessage"
+      ]
+    },
+    "minimal": {
+      "description": "File ops + shell only",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob"
+      ]
+    },
+    "none": {
+      "description": "Strip all tools",
+      "mode": "strip_all"
+    }
+  },
+  "config_file_path": "opencode.json",
+  "config_template": {
+    "$schema": "https://opencode.ai/config.json",
+    "provider": {
+      "router": {
+        "npm": "@ai-sdk/openai-compatible",
+        "options": {
+          "baseURL": "{{base_url}}",
+          "apiKey": "{{auth_token}}"
+        },
+        "models": {
+          "{{model}}": {}
+        }
+      }
+    },
+    "model": "router/{{model}}"
+  }
+}

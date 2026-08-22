@@ -1,0 +1,9 @@
+{
+  "name": "Aider Open Nemotron Free",
+  "harness": "aider",
+  "provider": "openrouter",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "tool_profile": "full",
+  "max_tokens": null,
+  "fusion": null
+}

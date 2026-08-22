@@ -1,0 +1,6 @@
+{
+  "name": "native",
+  "base_url": "",
+  "api_key_env": "",
+  "description": "Native mode — harness uses its own default API endpoint. No router involvement, no model override."
+}

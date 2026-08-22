@@ -1,0 +1,90 @@
+{
+  "name": "deepseek-harness",
+  "binary": "dsh",
+  "binary_path": "",
+  "launch_mode": "env",
+  "speaks_protocol": "openai",
+  "discover_timeout": 45,
+  "env_map": {
+    "base_url": "DEEPSEEK_BASE_URL",
+    "auth_token": "DEEPSEEK_API_KEY"
+  },
+  "extra_args": [
+    "--profile",
+    "headless"
+  ],
+  "probe_args": [
+    "hi"
+  ],
+  "path_additions": [
+    "C:\\Program Files\\nodejs"
+  ],
+  "available_tools": [
+    "create_goal",
+    "edit",
+    "exit_plan_mode",
+    "get_goal",
+    "glob",
+    "grep",
+    "interrupt_agent",
+    "job_kill",
+    "job_list",
+    "job_output",
+    "list_agents",
+    "pwsh",
+    "ralph",
+    "read",
+    "read_image",
+    "send_message",
+    "skill",
+    "str_replace_editor",
+    "subagent",
+    "subagent_fork",
+    "todo_write",
+    "update_goal",
+    "web_search",
+    "workflow",
+    "write"
+  ],
+  "tool_profiles": {
+    "coding": {
+      "description": "Essential coding tools",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob",
+        "Agent",
+        "WebSearch",
+        "WebFetch",
+        "AskUserQuestion",
+        "TaskOutput",
+        "TaskStop",
+        "SendMessage"
+      ]
+    },
+    "full": {
+      "description": "All tools (pass-through)",
+      "mode": "keep_all"
+    },
+    "minimal": {
+      "description": "File ops + shell only",
+      "mode": "whitelist",
+      "tools": [
+        "PowerShell",
+        "Read",
+        "Write",
+        "Edit",
+        "Grep",
+        "Glob"
+      ]
+    },
+    "none": {
+      "description": "Strip all tools",
+      "mode": "strip_all"
+    }
+  }
+}

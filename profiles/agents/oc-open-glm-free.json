@@ -1,0 +1,8 @@
+{
+  "name": "OC Open GLM (Free)",
+  "harness": "opencode",
+  "provider": "openrouter",
+  "model": "z-ai/glm-5.2:free",
+  "tool_profile": "none",
+  "fusion": null
+}

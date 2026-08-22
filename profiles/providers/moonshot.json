@@ -1,0 +1,8 @@
+{
+  "name": "moonshot",
+  "base_url": "https://api.moonshot.ai",
+  "api_key_env": "MOONSHOT_API_KEY",
+  "endpoints": {
+    "openai": "/v1/chat/completions"
+  }
+}

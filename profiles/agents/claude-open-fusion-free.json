@@ -1,0 +1,16 @@
+{
+  "name": "Claude Open Fusion Free",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "openrouter/fusion",
+  "tool_profile": "none",
+  "fusion": {
+    "id": "fusion",
+    "analysis_models": [
+      "z-ai/glm-5.2:free",
+      "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "google/gemma-4-31b-it:free"
+    ],
+    "model": "z-ai/glm-5.2:free"
+  }
+}

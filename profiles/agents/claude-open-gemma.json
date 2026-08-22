@@ -1,0 +1,8 @@
+{
+  "name": "Claude Open Gemma (Free)",
+  "harness": "claude-code",
+  "provider": "openrouter",
+  "model": "google/gemma-4-31b-it:free",
+  "tool_profile": "coding",
+  "fusion": null
+}
