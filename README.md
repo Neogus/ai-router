@@ -65,7 +65,7 @@ AI Router sits between your coding harnesses (Claude Code, Aider, Gemini CLI, De
 
 ```powershell
 # 1. Clone the repository
-git clone https://github.com/your-org/ai-router.git
+git clone https://github.com/Neogus/ai-router.git
 cd ai-router
 
 # 2. Run the installer (as Administrator)
@@ -367,4 +367,22 @@ Service start/stop/restart requires admin. Either:
 
 **AGPL-3.0** — Free to use, study, and modify. If you distribute or deploy it commercially, you must release your source code under the same license.
 
+
 See [LICENSE](LICENSE) for full terms.
+
+---
+
+## Disclaimer
+
+AI Router is an independent, open-source project. It is **not affiliated with, endorsed by, or sponsored by** Anthropic, OpenAI, Google, NVIDIA, Sourcegraph, Block, or any other company whose products or services are referenced in this project.
+
+All product names, trademarks, and registered trademarks (including but not limited to Claude, Anthropic, OpenAI, Gemini, DeepSeek, Codex, Goose, and Amp) are the property of their respective owners and are used here solely for identification and interoperability purposes.
+
+This tool routes API requests using **publicly documented environment variables and standard HTTP APIs**. It does not reverse-engineer, decompile, or modify any third-party software.
+
+**Users are solely responsible for:**
+- Obtaining and using their own API keys
+- Complying with each provider's Terms of Service and Usage Policies
+- Ensuring their use of this tool does not violate any applicable agreements
+
+This software is provided "as is", without warranty of any kind. See the [LICENSE](LICENSE) for full terms.
