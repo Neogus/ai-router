@@ -20,3 +20,7 @@ profiles/agents/_probe-*.json
 # Large binaries
 *.tar.bz2
 *.zip
+
+# Personal / non-repo files
+docs/linkedin-project-description.md
+docs/linkedin-post.md
